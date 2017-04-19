@@ -18,7 +18,7 @@ public class IPokemonFactoryTest {
 	@Before
 	public void setUp()
 	{
-		MockitoAnnotations.initMocks(PokeFactory);
+		MockitoAnnotations.initMocks(this);
 		Mockito.when(PokeFactory.createPokemon(0, 0, 0, 0, 0)).thenReturn(Poke);
 	}
 	

@@ -26,7 +26,7 @@ public class IPokemonMetadataProviderTest {
 	}
 	
 	@Test
-	public void getPokemonMetadataTest() throws PokedexException
+	public void getPokemonMetadataTest(int index) throws PokedexException
 	{
 		assertEquals(PokeMetaData.getPokemonMetadata(0).getIndex(), M1.getIndex());
 		assertEquals(PokeMetaData.getPokemonMetadata(0).getName(), M1.getName());
