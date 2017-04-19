@@ -34,11 +34,11 @@ public class IPokemonMetadataProviderTest {
 		assertEquals(PokeMetaData.getPokemonMetadata(0).getDefense(), M1.getDefense());
 		assertEquals(PokeMetaData.getPokemonMetadata(0).getStamina(), M1.getStamina());
 		
-		assertEquals(PokeMetaData.getPokemonMetadata(1).getIndex(), M2.getIndex());
-		assertEquals(PokeMetaData.getPokemonMetadata(1).getName(), M2.getName());
-		assertEquals(PokeMetaData.getPokemonMetadata(1).getAttack(), M2.getAttack());
-		assertEquals(PokeMetaData.getPokemonMetadata(1).getDefense(), M2.getDefense());
-		assertEquals(PokeMetaData.getPokemonMetadata(1).getStamina(), M2.getStamina());
+		assertEquals(PokeMetaData.getPokemonMetadata(133).getIndex(), M2.getIndex());
+		assertEquals(PokeMetaData.getPokemonMetadata(133).getName(), M2.getName());
+		assertEquals(PokeMetaData.getPokemonMetadata(133).getAttack(), M2.getAttack());
+		assertEquals(PokeMetaData.getPokemonMetadata(133).getDefense(), M2.getDefense());
+		assertEquals(PokeMetaData.getPokemonMetadata(133).getStamina(), M2.getStamina());
 	}
 
 }
