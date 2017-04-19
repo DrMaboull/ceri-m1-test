@@ -19,8 +19,6 @@ public class IPokedexFactoryTest {
 	private IPokemonMetadataProvider provider;
 	private IPokemonFactory factory;
 	private IPokedex Poke;
-	private Pokemon bulbizarre = new Pokemon(0, "Bulbi", 613, 64, 4000, 4, 126, 126, 90, 56);
-	private ArrayList<Pokemon> test = new ArrayList() {{ add(bulbizarre); }};
 	
 	
 	@Before
