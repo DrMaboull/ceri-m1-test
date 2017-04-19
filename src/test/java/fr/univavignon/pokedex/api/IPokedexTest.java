@@ -26,7 +26,7 @@ public class IPokedexTest {
 		Mockito.when(pokedex.size()).thenReturn(1);
 		Mockito.when(pokedex.addPokemon(bulbizarre)).thenReturn(1);
 		Mockito.when(pokedex.getPokemon(0)).thenReturn(bulbizarre);
-		Mockito.when(pokedex.getPokemons()).thenReturn();
+		Mockito.when(pokedex.getPokemons()).thenReturn(al);
 	}
 	
 	@Test
