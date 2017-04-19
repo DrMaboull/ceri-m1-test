@@ -33,16 +33,6 @@ public class IPokedexFactoryTest {
 	@Test
 	public void createPokedexTest() throws PokedexException
 	{
-		assertEquals(PokedexFactory.createPokedex(provider, factory).getPokemons(), Poke.getPokemons());
-		
-			try {
-				assertEquals(PokedexFactory.createPokedex(provider, factory).getPokemon(0), Poke.getPokemon(0));
-			} catch (PokedexException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-		assertEquals(PokedexFactory.createPokedex(provider, factory).size(), Poke.size());
-		assertEquals(PokedexFactory.createPokedex(provider,factory).addPokemon(bulbizarre), Poke.addPokemon(bulbizarre));
+		assertEquals(PokedexFactory.createPokedex(provider, factory), Poke);
 	}
 }
