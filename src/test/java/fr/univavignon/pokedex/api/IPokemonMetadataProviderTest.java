@@ -19,7 +19,7 @@ public class IPokemonMetadataProviderTest {
 	@Before
 	public void setUp() throws PokedexException
 	{
-		MockitoAnnotations.initMocks(PokeMetaData);
+		MockitoAnnotations.initMocks(this);
 		Mockito.when(PokeMetaData.getPokemonMetadata(-1)).thenThrow(new PokedexException("Error"));
 		Mockito.when(PokeMetaData.getPokemonMetadata(0)).thenReturn(M1);
 		Mockito.when(PokeMetaData.getPokemonMetadata(133)).thenReturn(M2);
